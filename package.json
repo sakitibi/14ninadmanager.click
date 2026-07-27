@@ -1,9 +1,9 @@
 {
   "name": "13ninadmanager.click",
-  "version": "2.0.110",
+  "version": "2.1.0",
   "author": {
-    "name": "13ninstudio, Inc",
-    "url": "https://github.com/sakitibi/13ninadmanager.click"
+    "name": "14ninstudio, Inc",
+    "url": "https://github.com/sakitibi/14ninadmanager.click"
   },
   "scripts": {
     "dev": "nuxt dev",
