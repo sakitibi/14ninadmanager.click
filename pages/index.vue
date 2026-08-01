@@ -25,7 +25,7 @@ const supabase = useSupabase();
 onMounted(async () => {
     const params = new URLSearchParams(window.location.search);
     const token = params.get("token");
-    const loginFlag = params.get("login"); // ←追加
+    const loginFlag = params.get("login");
 
     // token がある場合は supabase セッションをセット
     if (token) {
@@ -66,10 +66,10 @@ async function shorten(e: Event) {
     if (!inputURL.value) return;
 
     // ランダムID作成
-    const id = nanoid(Math.floor(Math.random() * 100) + 100); // nanoidでも可
+    const id = nanoid(Math.floor(Math.random() * 100) + 100);
     // 直接 INSERT
     const { error } = await supabase
-        .from("13ninad_click_urls") // RLS OFFの場合
+        .from("14ninad_click_urls")
         .insert({
             id,
             url: inputURL.value,
