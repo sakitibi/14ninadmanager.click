@@ -9,7 +9,7 @@ export default defineEventHandler(async (event: any) => {
     const supabase = useSupabase();
 
     const { data, error } = await supabase
-        .from("13ninad_click_urls")
+        .from("14ninad_click_urls")
         .select("url")
         .eq("id", id)
         .single();
