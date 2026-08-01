@@ -18,7 +18,6 @@ export default defineEventHandler(async (event: any) => {
         return new Response(null, { status: 404 });
     }
 
-    // ★ これが最重要
     return new Response(null, {
         status: 301,
         headers: {
